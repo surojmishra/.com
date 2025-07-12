@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🇮🇳 ১৫ আগস্ট - স্বাধীনতা দিবস ২০২৫ | Suroj Store</title>
+
+  <meta name="description" content="স্বাধীনতা দিবস ২০২৫ উপলক্ষে পাঠান প্রিয়জনকে শুভেচ্ছা। Visit Suroj Mishra's Official Site - BG Remover, HTML Viewer, SUROJ TOOLS.">
+  <meta name="keywords" content="15 August, Independence Day India, SUROJ, SUROJ MISHRA, Suroj Store, ২০২৫ স্বাধীনতা দিবস, BG Remover, HTML Viewer, SUROJ Official Tools">
+  <meta name="author" content="SUROJ MISHRA">
+  <meta name="robots" content="index, follow">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="স্বাধীনতা দিবস ২০২৫ - SUROJ MISHRA Official Site">
+  <meta property="og:description" content="🇮🇳 পাঠান প্রিয়জনকে স্বাধীনতা দিবসের শুভেচ্ছা। Explore BG Remover, HTML Viewer, SUROJ TOOLS.">
+  <meta property="og:image" content="india.gif">
+  <meta property="og:url" content="https://surojmishra.github.io/-/">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding-bottom: 80px; /* নিচের ফিক্সড Sosel bar-এর জন্য জায়গা */
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #00FF00;
+      margin: 20px 0 10px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    h2 {
+      font-size: 26px;
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff0;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 70%;
+      border: none;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    button img {
+      height: 16px;
+    }
+
+    #fromText {
+      color: #ccc;
+      margin-top: 8px;
+    }
+
+    .ad-banner {
+      margin: 20px auto;
+      width: 300px;
+      height: 250px;
+    }
+
+    .ad-native {
+      margin: 20px auto;
+    }
+
+    .sosel-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 999;
+      text-align: center;
+      background-color: #000;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 20px 10px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="fireworks"></canvas>
+
+  <div class="container">
+    <h1>🇮🇳 স্বাধীনতা দিবস ২০২৫ 🇮🇳</h1>
+    <h2>🎉 শুভ ১৫ আগস্ট 🎉</h2>
+
+    <img src="india.gif" alt="Independence Day Image" />
+
+    <p id="fromText"></p>
+    <input type="text" id="yourName" placeholder="আপনার নাম লিখুন" />
+    <br />
+    <button onclick="generateLink()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      WhatsApp-এ পাঠান
+    </button>
+
+    <!-- ✅ Native Ad (WhatsApp বাটনের নিচে) -->
+    <div class="ad-native">
+      <script async="async" data-cfasync="false" src="//pl27093633.profitableratecpm.com/aea30e97339903248885a23076fb379a/invoke.js"></script>
+      <div id="container-aea30e97339903248885a23076fb379a"></div>
+    </div>
+
+    <!-- ✅ Banner Ad (মাঝখানে) -->
+    <div class="ad-banner">
+      <script type="text/javascript">
+        atOptions = {
+          'key': 'cc403c42c864f5ceb3d4640be90fc381',
+          'format': 'iframe',
+          'height': 250,
+          'width': 300,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/cc403c42c864f5ceb3d4640be90fc381/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- ✅ Sosel Bar Fixed Bottom -->
+  <div class="sosel-bar">
+    <script type='text/javascript' src='//pl27078968.profitableratecpm.com/43/27/93/4327935a22a3a34f8383749e99344829.js'></script>
+  </div>
+
+  <!-- 🔍 Script: URL Param + Fireworks -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const fromName = urlParams.get("from");
+    if (fromName) {
+      document.getElementById("fromText").innerText = "From: " + decodeURIComponent(fromName);
+    }
+
+    function generateLink() {
+      const name = document.getElementById("yourName").value.trim();
+      if (!name) return alert("আপনার নাম লিখুন");
+      const link = `${window.location.origin}${window.location.pathname}?from=${encodeURIComponent(name)}`;
+      const msg = `🇮🇳 শুভ স্বাধীনতা দিবস 🇮🇳\nFrom: ${name}\n👉 ${link}`;
+      window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, "_blank");
+    }
+
+    // 🎆 Fireworks Animation
+    const canvas = document.getElementById("fireworks");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    let particles = [];
+
+    function createFirework(x, y) {
+      const colors = ["#f00", "#ff0", "#0f0", "#00f", "#fff"];
+      for (let i = 0; i < 100; i++) {
+        particles.push({
+          x, y,
+          angle: Math.random() * 2 * Math.PI,
+          speed: Math.random() * 5 + 1,
+          radius: Math.random() * 2 + 1,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          life: 100
+        });
+      }
+    }
+
+    function draw() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p, i) => {
+        const vx = Math.cos(p.angle) * p.speed;
+        const vy = Math.sin(p.angle) * p.speed;
+        p.x += vx; p.y += vy; p.life--;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = p.color; ctx.fill();
+        if (p.life <= 0) particles.splice(i, 1);
+      });
+      requestAnimationFrame(draw);
+    }
+
+    setInterval(() => {
+      createFirework(Math.random() * canvas.width, Math.random() * canvas.height / 2);
+    }, 1000);
+
+    draw();
+  </script>
+</body>
+</html>
